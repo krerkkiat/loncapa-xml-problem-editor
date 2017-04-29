@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "LON-CAPA Problem Editor",
+    "version": "0.1.0",
+    "description": "",
+    "author": "Krerkkiat Chusap",
+    "content_scripts": [{
+        "matches": ["https://*.ohio.edu/*"],
+        "js": ["loader.js"],
+        "run_at": "document_idle"
+    }],
+    "web_accessible_resources": ["script.min.js", "fix.css", "lib/codemirror.min.css"]
+}
